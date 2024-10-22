@@ -17,6 +17,7 @@ class ReceiverNode(Node):
         self.get_logger().info(f'Received message: "{msg.data}"')
 
 def main(args=None):
+    print("Hello from task01.receiver")
     rclpy.init(args=args)
     receiver = ReceiverNode()
     rclpy.spin(receiver)
