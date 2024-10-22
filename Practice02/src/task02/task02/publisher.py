@@ -10,7 +10,7 @@ class Task02Publisher(Node):
         self.declare_parameter("topic_name", "")
         self.topic_name_parameter = self.get_parameter("topic_name").get_parameter_value().string_value
 
-        self.declare_parameter("text", "Hello, ROS2!")
+        self.declare_parameter("text", "")
         self.text_parameter = self.get_parameter("text").get_parameter_value().string_value
 
         # self.get_logger().info(self.text_parameter)
