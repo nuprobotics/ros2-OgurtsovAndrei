@@ -16,6 +16,6 @@ def generate_launch_description():
             executable='task02_publisher',
             name='task02_publisher',
             output='screen',
-            parameters=[config]
+            parameters=[config, {'text': 'Hello, ROS2!'}]
         )
     ])
